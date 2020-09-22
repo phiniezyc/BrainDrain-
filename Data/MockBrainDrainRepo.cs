@@ -1,6 +1,6 @@
 namespace BrainDrain.Data
 {
-  public class MockBrainDrainRepo
+  public class MockBrainDrainRepo : IBrainDrainRepo
   {
 
   }
