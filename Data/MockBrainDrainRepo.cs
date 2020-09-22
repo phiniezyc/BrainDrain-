@@ -11,7 +11,13 @@ namespace BrainDrain.Data
     }
     public Command GetCommandById(int id)
     {
-
+      return new Command
+      {
+        Id=0,
+        HowTo="Play Guitar Well",
+        Line="Practice",
+        Platform="Blues"
+      };
     }
   }
 }
