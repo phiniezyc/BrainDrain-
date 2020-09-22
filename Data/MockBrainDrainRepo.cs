@@ -5,7 +5,7 @@ namespace BrainDrain.Data
 {
   public class MockBrainDrainRepo : IBrainDrainRepo
   {
-    public IEnumerable<Command> GetCommands()
+    public IEnumerable<Command> GetAllCommands()
     {
 
     }

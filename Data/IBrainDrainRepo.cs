@@ -3,7 +3,7 @@ using BrainDrain.Models;
 namespace  BrainDrain.Data
 {
   // Interface is just a list of the methods provided to the consumer of the interface
-    public interface BrainDrainRepo
+    public interface IBrainDrainRepo
       {
         // TODO: What is an IEnumerable?
         IEnumerable<Command> GetAllCommands();
