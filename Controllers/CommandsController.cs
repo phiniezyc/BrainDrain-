@@ -12,5 +12,10 @@ namespace BrainDrain.Controllers
     {
 
     }
+
+    public ActionResult <Command> GetCommandById(int id)
+    {
+      
+    }
   }
 }
