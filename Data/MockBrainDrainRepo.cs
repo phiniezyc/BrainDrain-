@@ -10,8 +10,8 @@ namespace BrainDrain.Data
       var commands = new List<Command>
       {
         new Command {Id=0,HowTo="Play Guitar Well",Line="Practice",Platform="Music Theory"},
-        new Command {Id=0,HowTo="Play Jazz",Line="Play Over Changes",Platform="Jazz"},
-        new Command {Id=0,HowTo="Play Blues",Line="Major Chords",Platform="Blues"}
+        new Command {Id=1,HowTo="Play Jazz",Line="Play Over Changes",Platform="Jazz"},
+        new Command {Id=2,HowTo="Play Blues",Line="Major Chords",Platform="Blues"}
       };
 
       return commands;
