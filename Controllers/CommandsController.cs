@@ -15,14 +15,18 @@ namespace BrainDrain.Controllers
     [HttpGet]
     public ActionResult <IEnumerable<Command>> GetAllCommands()
     {
+      var commandItems = _repository.GetAllCommands();
 
+      return Ok(commandItems);
     }
 
     // Get: api/commands/{id}
     [HttpGet("{id}")]
-    public ActionResult <Command> GetCommandById(int id)
+    public ActionResult <Command> GetCommandById(int id) //id comes from the request
     {
+      var commandItem = _repository.GetCommandById(id);
 
+      return Ok(commandItem);
     }
   }
 }
