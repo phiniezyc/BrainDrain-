@@ -13,7 +13,9 @@ namespace BrainDrain.Controllers
     {
 
     }
-    [HttpGet]
+
+    // Get: api/commands/{id}
+    [HttpGet("{id}")]
     public ActionResult <Command> GetCommandById(int id)
     {
 
