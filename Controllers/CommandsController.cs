@@ -8,6 +8,7 @@ namespace BrainDrain.Controllers
   // Use ControllerBase instead of Controller to keep it as lean as possible
   public class CommandsController : ControllerBase
   {
+    // Get: api/commands
     [HttpGet]
     public ActionResult <IEnumerable<Command>> GetAllCommands()
     {
