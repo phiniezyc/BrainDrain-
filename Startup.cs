@@ -13,6 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
+using BrainDrain.Data;
+
 namespace BrainDrain
 {
     public class Startup
@@ -30,6 +32,7 @@ namespace BrainDrain
             services.AddAuthentication(AzureADB2CDefaults.BearerAuthenticationScheme)
                 .AddAzureADB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
             services.AddControllers();
+            services.AddScoped<IBrainDrainRepo, MockBrainDrainRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
