@@ -9,7 +9,12 @@ namespace BrainDrain.Controllers
   // Use ControllerBase instead of Controller to keep it as lean as possible
   public class CommandsController : ControllerBase
   {
-    private readonly MockBrainDrainRepo _repository = new MockBrainDrainRepo();
+    private readonly IBrainDrainRepo _repository;
+    public CommandsController(IBrainDrainRepo repository)
+    {
+      _repository = repository;
+    }
+    // private readonly MockBrainDrainRepo _repository = new MockBrainDrainRepo();  // This is the less useful way so commented out
 
     // Get: api/commands
     [HttpGet]
