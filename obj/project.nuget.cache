@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KY9/RT5LQaqX0B/6gGN2mY/i/Ekj0YV+mP1JHUeBW0KyjWDlMfJZCB+nlBlUou1hB9kp9pkmgDadPqoOw+SZRg==",
+  "dgSpecHash": "JrSb+fYrIcN22Vk+zHkl3Tm6YMDYImM+Aeq1heROltFUEfoi6cRiZm9rsBUD+4JvOPDn3stDD1+rw2RBjiakPg==",
   "success": true,
   "projectFilePath": "/Users/Chance/Code/c#/BrainDrain/BrainDrain.csproj",
   "expectedPackageFiles": [
@@ -9,10 +9,12 @@
     "/Users/Chance/.nuget/packages/microsoft.aspnetcore.authentication.openidconnect/3.1.7/microsoft.aspnetcore.authentication.openidconnect.3.1.7.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
-    "/Users/Chance/.nuget/packages/microsoft.csharp/4.3.0/microsoft.csharp.4.3.0.nupkg.sha512",
+    "/Users/Chance/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.entityframeworkcore/3.1.8/microsoft.entityframeworkcore.3.1.8.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.entityframeworkcore.abstractions/3.1.8/microsoft.entityframeworkcore.abstractions.3.1.8.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.entityframeworkcore.analyzers/3.1.8/microsoft.entityframeworkcore.analyzers.3.1.8.nupkg.sha512",
+    "/Users/Chance/.nuget/packages/microsoft.entityframeworkcore.design/3.1.8/microsoft.entityframeworkcore.design.3.1.8.nupkg.sha512",
+    "/Users/Chance/.nuget/packages/microsoft.entityframeworkcore.relational/3.1.8/microsoft.entityframeworkcore.relational.3.1.8.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.extensions.caching.abstractions/3.1.8/microsoft.extensions.caching.abstractions.3.1.8.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.extensions.caching.memory/3.1.8/microsoft.extensions.caching.memory.3.1.8.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.extensions.configuration/3.1.8/microsoft.extensions.configuration.3.1.8.nupkg.sha512",
