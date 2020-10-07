@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using BrainDrain.Models;
 namespace BrainDrain.Data
 {
   public class BrainDrainContext : DbContext
@@ -7,5 +8,7 @@ namespace BrainDrain.Data
     {
 
     }
+
+    public DbSet<Command> Commands { get; set;}
   }
 }
