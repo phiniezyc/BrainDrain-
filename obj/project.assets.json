@@ -1275,7 +1275,7 @@
       "Microsoft.AspNetCore.Authentication.AzureADB2C.UI >= 3.1.7",
       "Microsoft.EntityFrameworkCore >= 3.1.8",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.8",
-      "Pomelo.EntityFrameworkCore.MySql >= *"
+      "Pomelo.EntityFrameworkCore.MySql >= 3.2.2"
     ]
   },
   "packageFolders": {
@@ -1329,7 +1329,7 @@
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[3.2.2, )"
           }
         },
         "imports": [

@@ -52,7 +52,7 @@
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[3.2.2, )"
             }
           },
           "imports": [

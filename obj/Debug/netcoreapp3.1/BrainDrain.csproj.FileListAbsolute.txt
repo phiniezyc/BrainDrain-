@@ -47,3 +47,8 @@
 /Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
 /Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
 /Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/MySqlConnector.dll
+/Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
