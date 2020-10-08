@@ -12,8 +12,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore;
 using BrainDrain.Data;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 namespace BrainDrain
 {
@@ -29,6 +31,30 @@ namespace BrainDrain
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // services.AddDbContextPool<BrainDrainContext>(dbContextOptions => dbContextOptions.UseMysql(Configuration.GetConnectionString("Default")));
+
+
+            services.AddDbContextPool<BrainDrainContext>(
+                dbContextOptions => dbContextOptions
+                    .UseMySql(
+                        // Replace with your connection string.
+                        "server=localhost;user=root;password=1234;database=ef",
+                        // Replace with your server version and type.
+                        mySqlOptions => mySqlOptions
+                            .ServerVersion(new Version(8, 0, 21), ServerType.MySql)
+                            .CharSetBehavior(CharSetBehavior.NeverAppend))
+                    // Everything from this point on is optional but helps with debugging.
+                    .UseLoggerFactory(
+                        LoggerFactory.Create(
+                            logging => logging
+                                .AddConsole()
+                                .AddFilter(level => level >= LogLevel.Information)))
+                    .EnableSensitiveDataLogging()
+                    .EnableDetailedErrors());
+
+
+
+
             services.AddAuthentication(AzureADB2CDefaults.BearerAuthenticationScheme)
                 .AddAzureADB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
             services.AddControllers();
