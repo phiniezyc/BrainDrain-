@@ -23,12 +23,16 @@ namespace BrainDrain.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("HowTo")
-                        .HasColumnType("longtext");
+                        .IsRequired()
+                        .HasColumnType("varchar(250)")
+                        .HasMaxLength(250);
 
                     b.Property<string>("Line")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Platform")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BrainDrain.Migrations
 {
     [DbContext(typeof(BrainDrainContext))]
-    [Migration("20201008224942_InitialMigration")]
+    [Migration("20201008225805_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,12 +25,16 @@ namespace BrainDrain.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("HowTo")
-                        .HasColumnType("longtext");
+                        .IsRequired()
+                        .HasColumnType("varchar(250)")
+                        .HasMaxLength(250);
 
                     b.Property<string>("Line")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Platform")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
