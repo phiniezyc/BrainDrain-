@@ -38,7 +38,7 @@ namespace BrainDrain
                 dbContextOptions => dbContextOptions
                     .UseMySql(
                         // Replace with your connection string.
-                        "server=localhost;user=root;password=1234;database=ef",
+                        "server=localhost;user=root;password=;database=BrainDrainDB",
                         // Replace with your server version and type.
                         mySqlOptions => mySqlOptions
                             .ServerVersion(new Version(8, 0, 21), ServerType.MySql)
