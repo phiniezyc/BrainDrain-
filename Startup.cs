@@ -58,7 +58,8 @@ namespace BrainDrain
             services.AddAuthentication(AzureADB2CDefaults.BearerAuthenticationScheme)
                 .AddAzureADB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
             services.AddControllers();
-            services.AddScoped<IBrainDrainRepo, MockBrainDrainRepo>(); // should this need to change, can easily swap out the MockRepo
+            //services.AddScoped<IBrainDrainRepo, MockBrainDrainRepo>(); // should this need to change, can easily swap in the MockRepo
+            services.AddScoped<IBrainDrainRepo, BrainDrainDBRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
