@@ -17,6 +17,7 @@ using Pomelo.EntityFrameworkCore;
 using BrainDrain.Data;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
+using AutoMapper;
 namespace BrainDrain
 {
     public class Startup
@@ -58,6 +59,9 @@ namespace BrainDrain
             services.AddAuthentication(AzureADB2CDefaults.BearerAuthenticationScheme)
                 .AddAzureADB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
             services.AddControllers();
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
             //services.AddScoped<IBrainDrainRepo, MockBrainDrainRepo>(); // should this need to change, can easily swap in the MockRepo
             services.AddScoped<IBrainDrainRepo, BrainDrainDBRepo>();
         }
