@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using BrainDrain.Models;
 using BrainDrain.Data;
+using BrainDrain.Dtos;
 namespace BrainDrain.Controllers
 {
   [Route("api/commands")]
@@ -30,11 +31,11 @@ namespace BrainDrain.Controllers
 
     // Get: api/commands/{id}
     [HttpGet("{id}")]
-    public ActionResult <Command> GetCommandById(int id) //id comes from the request
+    public ActionResult <CommandReadDto> GetCommandById(int id) //id comes from the request
     {
       var commandItem = _repository.GetCommandById(id);
       if (commandItem != null) {
-        return Ok(commandItem);
+        return Ok(_mapper.Map<CommandReadDto>(commandItem));
       }
       return NotFound();
     }
