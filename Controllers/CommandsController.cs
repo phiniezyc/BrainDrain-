@@ -30,8 +30,10 @@ namespace BrainDrain.Controllers
     public ActionResult <Command> GetCommandById(int id) //id comes from the request
     {
       var commandItem = _repository.GetCommandById(id);
-
-      return Ok(commandItem);
+      if (commandItem != null) {
+        return Ok(commandItem);
+      }
+      return NotFound();
     }
   }
 }
