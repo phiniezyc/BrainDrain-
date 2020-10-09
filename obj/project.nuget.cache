@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "siFCyu/aNTJ51L6FGuswFQhGHPmVQZHlgUWo3QjBfVw+iWBUN+WqBzYdsKj+kiWOSt2npecw5/oVRdPJX1mveQ==",
+  "dgSpecHash": "wg0foy2y8iOghLnFLR/+LAKw0iWzIOqiOIkZRdu/CHzVWQQHv4+vnDQyKPSB65wWqxRFDpExobyUtKqSI72gFg==",
   "success": true,
   "projectFilePath": "/Users/Chance/Code/c#/BrainDrain/BrainDrain.csproj",
   "expectedPackageFiles": [
+    "/Users/Chance/.nuget/packages/automapper/10.0.0/automapper.10.0.0.nupkg.sha512",
+    "/Users/Chance/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.0.1/automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.aspnetcore.authentication.azureadb2c.ui/3.1.7/microsoft.aspnetcore.authentication.azureadb2c.ui.3.1.7.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.7/microsoft.aspnetcore.authentication.jwtbearer.3.1.7.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.aspnetcore.authentication.openidconnect/3.1.7/microsoft.aspnetcore.authentication.openidconnect.3.1.7.nupkg.sha512",
@@ -39,6 +41,7 @@
     "/Users/Chance/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "/Users/Chance/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "/Users/Chance/.nuget/packages/system.identitymodel.tokens.jwt/5.5.0/system.identitymodel.tokens.jwt.5.5.0.nupkg.sha512",
+    "/Users/Chance/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",
     "/Users/Chance/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
