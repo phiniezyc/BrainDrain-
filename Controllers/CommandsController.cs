@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
 using BrainDrain.Models;
 using BrainDrain.Data;
 namespace BrainDrain.Controllers
@@ -10,7 +11,7 @@ namespace BrainDrain.Controllers
   public class CommandsController : ControllerBase
   {
     private readonly IBrainDrainRepo _repository; // TODO: lookup readonly?
-    public CommandsController(IBrainDrainRepo repository) //constructor
+    public CommandsController(IBrainDrainRepo repository, IMapper mapper) //constructor
     {
       _repository = repository; // _ denotes that it is private
     }
