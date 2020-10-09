@@ -11,9 +11,11 @@ namespace BrainDrain.Controllers
   public class CommandsController : ControllerBase
   {
     private readonly IBrainDrainRepo _repository; // TODO: lookup readonly?
+    private readonly IMapper _mapper;
     public CommandsController(IBrainDrainRepo repository, IMapper mapper) //constructor
     {
       _repository = repository; // _ denotes that it is private
+      _mapper = mapper;
     }
     // private readonly MockBrainDrainRepo _repository = new MockBrainDrainRepo();  // This is the less useful way so commented out
 
