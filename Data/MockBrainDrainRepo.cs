@@ -5,6 +5,11 @@ namespace BrainDrain.Data
 {
   public class MockBrainDrainRepo : IBrainDrainRepo
   {
+    public void CreateCommand(Command cmd)
+    {
+      throw new System.NotImplementedException();
+    }
+
     public IEnumerable<Command> GetAllCommands()
     {
       var commands = new List<Command>
@@ -25,6 +30,11 @@ namespace BrainDrain.Data
         Line="Practice",
         Platform="Music Theory"
       };
+    }
+
+    public bool SaveChanges()
+    {
+      throw new System.NotImplementedException();
     }
   }
 }

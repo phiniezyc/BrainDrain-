@@ -10,6 +10,12 @@ namespace BrainDrain.Data {
     {
       _context = context;
     }
+
+    public void CreateCommand(Command cmd)
+    {
+      throw new System.NotImplementedException();
+    }
+
     public IEnumerable<Command> GetAllCommands()
     {
       return _context.Commands.ToList();
@@ -20,5 +26,9 @@ namespace BrainDrain.Data {
       return _context.Commands.FirstOrDefault(p => p.Id == id);
     }
 
+    public bool SaveChanges()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }
