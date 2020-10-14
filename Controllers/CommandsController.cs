@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
-using BrainDrain.Models;
+
 using BrainDrain.Data;
 using BrainDrain.Dtos;
 namespace BrainDrain.Controllers

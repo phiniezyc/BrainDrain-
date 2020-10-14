@@ -52,3 +52,5 @@
 /Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/MySqlConnector.dll
 /Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
 /Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
+/Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
