@@ -38,5 +38,12 @@ namespace BrainDrain.Controllers
       }
       return NotFound();
     }
+
+    //POST api/commands
+    [HttpPost]
+    public ActionResult <CommandReadDto> CreateCommand(CommandCreateDto commandCreateDto)
+    {
+      var command 
+    }
   }
 }
