@@ -7,7 +7,9 @@ namespace BrainDrain.Profiles
   {
     public BrainDrainProfile()
     {
+      //Source => Target
       CreateMap<Command, CommandReadDto>();
+      CreateMap<CommandCreateDto, Command>();
     }
   }
 }
