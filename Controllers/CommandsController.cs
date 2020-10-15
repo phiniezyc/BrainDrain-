@@ -47,6 +47,7 @@ namespace BrainDrain.Controllers
     {
       var commandModel = _mapper.Map<Command>(commandCreateDto);
       _repository.CreateCommand(commandModel);
+      _repository.SaveChanges();
 
       return Ok(commandModel);
     }
