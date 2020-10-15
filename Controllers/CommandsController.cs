@@ -31,7 +31,7 @@ namespace BrainDrain.Controllers
     }
 
     // Get: api/commands/{id}
-    [HttpGet("{id}")]
+    [HttpGet("{id}", Name="GetCommandById")]
     public ActionResult <CommandReadDto> GetCommandById(int id) //id comes from the request
     {
       var commandItem = _repository.GetCommandById(id);
