@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using BrainDrain.Data;
 using BrainDrain.Dtos;
+using BrainDrain.Models;
+
 namespace BrainDrain.Controllers
 {
   [Route("api/commands")]
@@ -43,7 +45,10 @@ namespace BrainDrain.Controllers
     [HttpPost]
     public ActionResult <CommandReadDto> CreateCommand(CommandCreateDto commandCreateDto)
     {
-      var command 
+      var commandModel = _mapper.Map<Command>(commandCreateDto);
+      _repository.CreateCommand(commandModel);
+
+      return Ok(commandModel);
     }
   }
 }
