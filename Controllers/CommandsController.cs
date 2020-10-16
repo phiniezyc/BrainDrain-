@@ -65,7 +65,11 @@ namespace BrainDrain.Controllers
       {
         return NotFound();
       }
+      _mapper.Map(commandUpdateDto, commandModelFromRepo);
 
+      _repository.UpdateCommand(commandModelFromRepo);
+      _repository.SaveChanges();
+      return NoContent();
     }
   }
 }
