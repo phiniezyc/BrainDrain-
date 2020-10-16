@@ -7,11 +7,10 @@ namespace  BrainDrain.Data
       {
 
         bool SaveChanges();
-        
-        // TODO: What is an IEnumerable?
         IEnumerable<Command> GetAllCommands();
         Command GetCommandById(int id);
-
         void CreateCommand(Command cmd);
+        void UpdateCommand(Command cmd);
+
       }
 }
