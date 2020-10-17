@@ -16,6 +16,7 @@ using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore;
 using BrainDrain.Data;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using Newtonsoft.Json.Serialization;
 
 using AutoMapper;
 namespace BrainDrain
@@ -54,7 +55,9 @@ namespace BrainDrain
                     .EnableDetailedErrors());
 
 
-
+            services.AddControllers().AddNewtonsoftJson(s => {
+                s.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            });
 
             services.AddAuthentication(AzureADB2CDefaults.BearerAuthenticationScheme)
                 .AddAzureADB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
