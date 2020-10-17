@@ -75,6 +75,17 @@ namespace BrainDrain.Controllers
 
     //PATCH api/commands/{id}
     //Patch is more efficient updating because don't have to supply the whole object each times as in the Put method
+
+    //EX: localhost:5000/api/commands/7
+    /* payload to pass to the api from client (postman). Replace = operation. Path = what key to target
+      [
+      {
+        "op": "replace",
+        "path": "/howto",
+        "value": "Some new value"
+      }
+      ]
+    */
     [HttpPatch("{id}")]
     public ActionResult PartialCommandUpdate(int id, JsonPatchDocument<CommandUpdateDto> patchDoc)
     {

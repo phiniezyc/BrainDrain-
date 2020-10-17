@@ -54,3 +54,6 @@
 /Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
 /Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/AutoMapper.dll
 /Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+/Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/Chance/Code/c#/BrainDrain/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
