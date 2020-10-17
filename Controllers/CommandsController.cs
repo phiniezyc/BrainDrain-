@@ -4,6 +4,7 @@ using AutoMapper;
 using BrainDrain.Data;
 using BrainDrain.Dtos;
 using BrainDrain.Models;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace BrainDrain.Controllers
 {
@@ -72,7 +73,31 @@ namespace BrainDrain.Controllers
       return NoContent();
     }
 
-    //PATCH
+    //PATCH api/commands/{id}
     //Patch is more efficient updating because don't have to supply the whole object each times as in the Put method
+    [HttpPatch("{id}")]
+    public ActionResult PartialCommandUpdate(int id, JsonPatchDocument<CommandUpdateDto> patchDoc)
+    {
+      var commandModelFromRepo = _repository.GetCommandById(id);
+
+      if(commandModelFromRepo == null)
+      {
+        return NotFound();
+      }
+
+      var CommandToPatch = _mapper.Map<CommandUpdateDto>(commandModelFromRepo);
+      patchDoc.ApplyTo(CommandToPatch, ModelState);
+
+      if(!TryValidateModel(CommandToPatch))
+      {
+        return ValidationProblem(ModelState);
+      }
+
+      _mapper.Map(CommandToPatch, commandModelFromRepo);
+      _repository.UpdateCommand(commandModelFromRepo);
+      _repository.SaveChanges();
+
+      return NoContent();
+    }
   }
 }
