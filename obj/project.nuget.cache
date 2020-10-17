@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "l7qSr5BkTA4hOsBQkP9mwM4K1QciIzVboYYzZejke9M7tPC7A5f5uPX0kezUl4ILOmAjrKe+y1ddrFB3tVuyAg==",
+  "dgSpecHash": "hSvuNBKOLGU2RPyR9HXH6nLnrVk9g7kx+4sENwKZlHREz1fQ6cChJUk9qMXdxXxZMpD9Zv2wNgqNfs5ZXWNnwA==",
   "success": true,
   "projectFilePath": "/Users/Chance/Code/c#/BrainDrain/BrainDrain.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "/Users/Chance/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.7/microsoft.aspnetcore.authentication.jwtbearer.3.1.7.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.aspnetcore.authentication.openidconnect/3.1.7/microsoft.aspnetcore.authentication.openidconnect.3.1.7.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.aspnetcore.jsonpatch/3.1.9/microsoft.aspnetcore.jsonpatch.3.1.9.nupkg.sha512",
+    "/Users/Chance/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/3.1.9/microsoft.aspnetcore.mvc.newtonsoftjson.3.1.9.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/Users/Chance/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
@@ -36,6 +37,7 @@
     "/Users/Chance/.nuget/packages/microsoft.identitymodel.tokens/5.5.0/microsoft.identitymodel.tokens.5.5.0.nupkg.sha512",
     "/Users/Chance/.nuget/packages/mysqlconnector/0.69.9/mysqlconnector.0.69.9.nupkg.sha512",
     "/Users/Chance/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/Chance/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/Chance/.nuget/packages/pomelo.entityframeworkcore.mysql/3.2.2/pomelo.entityframeworkcore.mysql.3.2.2.nupkg.sha512",
     "/Users/Chance/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
     "/Users/Chance/.nuget/packages/system.collections.immutable/1.7.1/system.collections.immutable.1.7.1.nupkg.sha512",
