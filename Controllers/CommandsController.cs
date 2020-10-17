@@ -71,5 +71,8 @@ namespace BrainDrain.Controllers
       _repository.SaveChanges();
       return NoContent();
     }
+
+    //PATCH
+    //Patch is more efficient updating because don't have to supply the whole object each times as in the Put method
   }
 }
